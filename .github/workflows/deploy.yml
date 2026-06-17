@@ -83,8 +83,7 @@ jobs:
             --task-definition $TASK_DEF_ARN \
             --desired-count 1 \
             --launch-type FARGATE \
-            --network-configuration "awsvpcConfiguration={subnets=[subnet-04b3cbb325f02a8ab,subnet-01c118b1f316ef7a8
-],securityGroups=[sg-04f92f0f01e353332],assignPublicIp=ENABLED}"
+            --network-configuration "awsvpcConfiguration={subnets=[subnet-04b3cbb325f02a8ab,subnet-01c118b1f316ef7a8],securityGroups=[sg-04f92f0f01e353332],assignPublicIp=ENABLED}"
 
       - name: Deploy Latest Revision
         if: env.SERVICE_STATUS == 'ACTIVE'
