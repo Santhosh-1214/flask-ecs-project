@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Home page
 @app.route("/")
 def home():
-    return "<h1>Welcome to ECS CI/CD Pipeline through the Github Action with terraform</h1>"
+    return "<h1>Welcome to the ECS CI/CD Pipeline through the Github Action with terraform</h1>"
 
 # About page
 @app.route("/about")
